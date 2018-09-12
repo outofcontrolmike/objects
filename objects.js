@@ -36,7 +36,7 @@ const dog =
 };
 
 console.log(`${dog.name} is a ${dog.species} weighing in at ${dog.size} pounds`)
-console.log(`Look at cat! ${dog.name} barks" ${dog.bark}"`);
+console.log(`Look! a cat! ${dog.name} barks:" ${dog.bark}"`);
 
 // Modeling a bank account
 
@@ -44,18 +44,14 @@ const account =
 {
     name: "Alex",
     balance: 0,
-
-}
-
-/*const ryu = {
-    name: "Ryu",
-    health: 200,
-    strength: 99,
-    describe (){
-        return `${this.name} has ${this.health} health points and ${this.strength} as strength`;
-
+    describe(){
+        return `Owner: ${this.name}, balance: ${this.balance}`;
     }
 }
-console.log(ryu.describe());
 
-*/
+console.log(account.describe());
+
+account.balance += 250;
+account.balance -= 80;
+
+console.log(account.describe());
